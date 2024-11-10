@@ -1,0 +1,40 @@
+footer {
+    width: 100%;
+    background-color: hsl(180, 83%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px; /* Tamaño de texto normal */
+}
+
+footer a {
+    color: rgb(20, 22, 22);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre ícono y texto */
+}
+
+footer a:hover {
+    color: orange;
+}
+
+/* Diseño responsivo para pantallas grandes */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-link {
+        font-size: 18px; /* Tamaño de texto normal */
+    }
+}

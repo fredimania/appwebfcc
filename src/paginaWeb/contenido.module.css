@@ -1,0 +1,54 @@
+main{
+    background-color:greenyellow;
+    height:500px;
+    width:100%;
+    display:flex;
+    flex:row nowrap;
+}
+
+main section{
+    width:80%;
+    background-color:rgb(252, 253, 255);
+}
+
+main aside{
+    width:20%;
+    background-color:rgb(205, 50, 184);
+}
+
+/* Contenedor que organiza los videos */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Hacer cada video responsivo */
+  .responsive-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 para el video */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+@media (max-width:800px){
+    aside{
+        display:none;
+    }
+    main section{
+        width:100%;
+    }
+
+  }
